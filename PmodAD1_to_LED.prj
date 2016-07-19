@@ -1,0 +1,3 @@
+vhdl work "PWM_GEN.vhd"
+vhdl work "PmodAD1.vhd"
+vhdl work "PmodAD1_to_LED.vhd"

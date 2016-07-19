@@ -1,0 +1,75 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+/opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/trce -intstyle ise -v 3 -s 3 -n
+3 -fastpaths -xml PmodAD1_to_LED.twx PmodAD1_to_LED.ncd -o PmodAD1_to_LED.twr
+PmodAD1_to_LED.pcf -ucf Nexys3_master.ucf
+
+Design file:              PmodAD1_to_LED.ncd
+Physical constraint file: PmodAD1_to_LED.pcf
+Device,package,speed:     xc6slx16,csg324,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock CLK100MHZ
+------------+------------+------------+------------+------------+-------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                   | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s)  | Phase  |
+------------+------------+------------+------------+------------+-------------------+--------+
+BOTTON      |    3.306(R)|      SLOW  |   -1.426(R)|      FAST  |CLK100MHZ_IBUF_BUFG|   0.000|
+RST         |    4.933(R)|      SLOW  |   -0.389(R)|      SLOW  |CLK100MHZ_IBUF_BUFG|   0.000|
+------------+------------+------------+------------+------------+-------------------+--------+
+
+Clock CLK100MHZ to Pad
+------------+-----------------+------------+-----------------+------------+-------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                   | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)  | Phase  |
+------------+-----------------+------------+-----------------+------------+-------------------+--------+
+DIR_L       |         7.930(R)|      SLOW  |         4.379(R)|      FAST  |CLK100MHZ_IBUF_BUFG|   0.000|
+DIR_R       |         7.174(R)|      SLOW  |         3.671(R)|      FAST  |CLK100MHZ_IBUF_BUFG|   0.000|
+PWM_L       |         8.995(R)|      SLOW  |         5.085(R)|      FAST  |CLK100MHZ_IBUF_BUFG|   0.000|
+PWM_R       |         8.435(R)|      SLOW  |         4.767(R)|      FAST  |CLK100MHZ_IBUF_BUFG|   0.000|
+SCLK_OUT    |         9.057(R)|      SLOW  |         5.115(R)|      FAST  |CLK100MHZ_IBUF_BUFG|   0.000|
+------------+-----------------+------------+-----------------+------------+-------------------+--------+
+
+Clock to Setup on destination clock CLK100MHZ
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK100MHZ      |    4.701|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Mon Jul 18 18:45:16 2016 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 396 MB
+
+
+
